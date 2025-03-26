@@ -69,10 +69,10 @@ if uploaded_file is not None:
             col1, col2 = st.columns([1, 1])
 
             with col1:
-                st.image(original_image, caption="Original Image", use_column_width=True)
+                st.image(original_image, caption="Original Image", use_container_width=True)
 
             with col2:
-                st.image(transformed_image, caption="Transformed Image", use_column_width=True)
+                st.image(transformed_image, caption="Transformed Image", use_container_width=True)
         else:
             st.error("Failed to fetch the transformed image. Please check your parameters and try again.")
 
